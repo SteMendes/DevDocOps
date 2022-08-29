@@ -1,0 +1,8 @@
+import os
+
+#mds = [arq for arq in arquivos if arq.lower().endswith(".md")]
+
+pasta = './'
+for diretorio, subpastas, arquivos in os.walk(pasta):
+    for arquivo in arquivos:
+        print(os.path.join(diretorio, arquivo))
