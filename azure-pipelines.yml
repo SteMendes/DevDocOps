@@ -12,6 +12,10 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'teste-pipeline'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
